@@ -27,7 +27,7 @@ def get_shop_list_by_dishes(dishs, person):
                 # print(a)
                 if a['ingredient_name'] not in nec_ing:
                     nec_ing[a['ingredient_name']] = {'measure': a['measure'], 'quantity': int(a['quantity']) * person}
-                    print(nec_ing[a['ingredient_name']])
+                    # print(nec_ing[a['ingredient_name']])
                 else:
                     nec_ing[a['ingredient_name']]['quantity'] += int(a['quantity']) * person
     print(nec_ing)
